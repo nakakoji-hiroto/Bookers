@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,4 +31,25 @@ p {
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+}
+
+.Books_index {
+  margin-bottom: 50px;
+}
+
+.title {
+  margin: 10px 0;
+}
+
+.body {
+  margin-bottom: 15px;  
+}
+
+.title_field, .body_field {
+  display: block;
+}
+
+.create_book {
+  padding: 1px 5px;
+  text-align: center;
 }
