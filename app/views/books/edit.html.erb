@@ -1,5 +1,19 @@
 <h1>Editing Book</h1>
 
+<% if @book.errors.any? %>
+
+  <h4 class="error_title">
+    <%= @book.errors.count %> errors prohibited this book from being saved:
+  </h4>
+  
+    <ul class="error_message">
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  
+<% end %>
+
 <%= form_with model: @book, class: "edit_form" do |f| %>
   <div class="title">
     <label for="title_field">Title</label>

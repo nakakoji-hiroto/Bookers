@@ -13,8 +13,8 @@ class BooksController < ApplicationController
       flash[:notice] = 'Book was successfully created.'
       redirect_to book_path(@book.id)
     else
-      flash.now[:alert] = 'errors prohibited this book from being saved:'
-      render :intex
+      @book_all = Book.all.order("id")
+      render :index
     end
   end
   
@@ -32,7 +32,6 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully updated."
       redirect_to book_path(@book.id)
     else
-      flash.now[:alert] = "2 errors prohibited this book from being saved:"
       render :show
     end
   end
