@@ -3,11 +3,11 @@
 </div>
 
 <div class="show_title">
-  <span>Title: </span><%= @book.title %>
+  <span> <strong>Title:</strong> </span><%= @book.title %>
 </div>
 
-<div calss="show_body">
-  <span>Body: </span><%= @book.body %>
+<div class="show_body">
+  <span> <strong>Body:</strong> </span><%= @book.body %>
 </div>
 
 <%= link_to 'Edit', edit_book_path(@book.id) %><span> | </span>

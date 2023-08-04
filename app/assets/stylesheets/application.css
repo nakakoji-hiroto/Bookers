@@ -73,3 +73,7 @@ p {
   padding: 1px 5px;
   text-align: center;
 }
+
+.show_body, .show_title {
+  margin: 20px 0 30px 30px;
+}
