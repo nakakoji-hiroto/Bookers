@@ -46,6 +46,25 @@ p {
   margin-bottom: 15px;  
 }
 
+.title_col {
+  width: 200px;
+  padding: 10px 0;
+}
+
+.body_col {
+  width: 400px;
+  padding: 10px 0;
+}
+
+.link_col {
+  width: 150px;
+  padding: 10px 0;
+}
+
+.link_col > a:nth-child(-n+2) {
+  margin-right: 5px;
+}
+
 .title_field, .body_field {
   display: block;
 }

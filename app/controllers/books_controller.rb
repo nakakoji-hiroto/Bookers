@@ -4,6 +4,7 @@ class BooksController < ApplicationController
 
   def index
     @book = Book.new
+    @book_all = Book.all
   end
   
   def create
@@ -22,6 +23,11 @@ class BooksController < ApplicationController
   end
 
   def edit
+  end
+  
+  def destroy
+    flash[:notice] = 'Book was successfully destroyed.'
+    redirect_to books_path
   end
   
   private

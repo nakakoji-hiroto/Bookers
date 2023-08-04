@@ -1,3 +1,5 @@
+<%= flash[:notice] %>
+
 <section  class="Books_index">
 
   <h1>Books</h1>
@@ -8,11 +10,17 @@
       <th>Body</th>
     </tr>
     
+    <% @book_all.each do |book| %>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td class="title_col"><%= book.title %></td>
+      <td class="body_col"><%= book.body %></td>
+      <td class="link_col">
+        <%= link_to 'show', book_path(book.id) %>
+        <%= link_to 'Edit', edit_book_path(book.id) %>
+        <%= link_to 'Destroy', book_path(book.id), method: :DELETE %>
+      </td>
     </tr>
+    <% end %>
     
   </table>
 
