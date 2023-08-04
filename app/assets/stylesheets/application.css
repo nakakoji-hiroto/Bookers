@@ -34,8 +34,26 @@ p {
   margin: 33px;
 }
 
+a {
+  color: #000;
+}
+
+a:hover, a:hover:visited {
+  background-color: #000;
+  color: #fff;
+}
+
+a:visited {
+  color: #666;
+}
+
+.success {
+  margin: 30px;
+  color: green;
+}
+
 .Books_index {
-  margin-bottom: 50px;
+  margin: 20px;
 }
 
 .title {
@@ -48,17 +66,17 @@ p {
 
 .title_col {
   width: 200px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .body_col {
   width: 400px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .link_col {
   width: 150px;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .link_col > a:nth-child(-n+2) {
