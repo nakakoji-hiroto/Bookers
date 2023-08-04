@@ -43,7 +43,7 @@ p {
 }
 
 .body {
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
 }
 
 .title_col {
@@ -69,11 +69,15 @@ p {
   display: block;
 }
 
-.create_book {
+.create_book, .update_book {
   padding: 1px 5px;
   text-align: center;
 }
 
 .show_body, .show_title {
   margin: 20px 0 30px 30px;
+}
+
+.edit_form {
+  margin: 15px 0;
 }
