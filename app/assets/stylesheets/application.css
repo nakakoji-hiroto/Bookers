@@ -99,3 +99,25 @@ a:visited {
 .edit_form {
   margin: 15px 0;
 }
+
+.error_block {
+  width: 480px;
+  margin-top: 20px;
+  border: 2px solid #ee0000;  
+}
+
+.error_title {
+  width: auto;
+  background-color: #cc0000;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 0 5px 15px;
+  display: block
+}
+
+.error_message {
+  width: auto;
+  background-color: #eee;
+  font-size: 12px;
+  padding: 35px 0 35px 80px;
+}

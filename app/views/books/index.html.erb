@@ -35,6 +35,8 @@
   
   <% if @book.errors.any? %>
   
+  <section class="error_block">
+    
     <h4 class="error_title">
     <%= @book.errors.count %> errors prohibited this book from being saved:
     </h4>
@@ -47,6 +49,8 @@
       
     </ul>
     
+  </section>
+  
   <% end %>
   
   <%= form_with model: @book, class: "create_form" do |f| %>
