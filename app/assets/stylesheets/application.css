@@ -121,3 +121,14 @@ a:visited {
   font-size: 12px;
   padding: 35px 0 35px 80px;
 }
+
+.field_with_errors > input, 
+.field_with_errors > textarea
+{
+  border: 3px solid #cc0000;
+}
+
+label:has(+ div) {
+  background-color: #cc0000;
+  color: #fff;
+}

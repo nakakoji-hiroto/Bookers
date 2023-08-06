@@ -3,9 +3,6 @@ class BooksController < ApplicationController
   def top
   end
 
-  def new
-  end
-
   def index
     @book = Book.new
     @book_all = Book.all.order("id")
